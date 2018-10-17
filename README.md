@@ -2,7 +2,7 @@ frontend-nanodegree-arcade-game
 ===============================
 
 ## About:
-The Game is a project for a Udacity course, Object Oriented Programming in javascript to be specific. It uses ES6 synthax and may not run in other browsers.
+The Game is a project for a Udacity course, Object Oriented Programming in javascript to be specific. It uses ES6 synthax and may not run in some browsers.
 
 
 ## How To Play:
