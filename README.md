@@ -6,8 +6,8 @@ The Game is a project for a Udacity course, Object Oriented Programming in javas
 
 
 ## How To Play:
-You can play [here](https://cwaku.github.io/classic-arcade-game)
-Player is required to cross over to river without colliding with enemies(bugs)
+You can play [here](https://cwaku.github.io/classic-arcade-game).
+Player is required to cross over to river without colliding with enemies(bugs).
 It currently uses the arrow keys as input. Touch input will be added soon.
 
 
