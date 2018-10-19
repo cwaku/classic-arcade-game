@@ -1,6 +1,3 @@
-const modal = document.querySelector('.modal'),
-button = document.querySelector('button');
-
 // Enemies our player must avoid
 var Enemy = function(sprite, x, y) {
   // Variables applied to each of our instances go here,
@@ -56,28 +53,36 @@ class Player{
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
   }
   //Function  to handle input of player
-  handleInput(keyPressed, startGame) {
-    if(keyPressed == 'left' && this.x > 0) {
-      this.x -= 102;
-    } else if(keyPressed == 'right' && this.x < 405) {
-      this.x += 102;
-    } else if(keyPressed == 'up' && this.y > 0) {
-      this.y -= 83;
-    } else if(keyPressed == 'down' && this.y < 405) {
-      this.y += 83;
+  handleInput(input){
+    switch(input){
+      case 'left':
+      if (this.x > 0){
+        this.x -= 102;
       }
-  }
-
-update(){
-  if (this.y < 0){
-    modal.classList.remove('hide');
-    btn.onclick = function() {
-      modal.classList.add('hide');
-      player.x = 202;
-      player.y = 405;
+      break;
+      case 'right':
+      if (this.x < 405){
+        this.x += 102;
+      }
+      break;
+      case 'up':
+      if (this.y > 0){
+        this.y -= 83;
+      }
+      break;
+      case 'down':
+      if (this.y < 405) {
+        this.y += 83;
+      }
+    }
+    if (this.y < 0){
+      setTimeout(function() {
+        player.x = 202;
+        player.y = 405;
+      }, 600);
     }
   }
-}}
+}
 
 // Now instantiate your object.
 // Place all enemy objects in an array called allEnemies
