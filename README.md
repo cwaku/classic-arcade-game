@@ -19,3 +19,4 @@ All game resources and engine was provided by Udacity
 Contributions are not allowed untill further notice
 
 # ENJOY THE GAME
+To run the game locally, clone or download the zip file and run `index.html` in browser.
